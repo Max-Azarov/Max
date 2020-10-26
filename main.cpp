@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 
-#include "neuroNet/net.h"
+#include "net.h"
 
 int main()
 {
