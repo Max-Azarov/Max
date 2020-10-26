@@ -20,7 +20,7 @@ void Training::forwardPass(const std::vector<double> & in ) {
     // Передача значений на входы сети
     size_t count = 0;
     for (   auto itIn = std::begin(p_Net->getInputNeurons());
-            itIn != std::prev(std::end(p_Net->getInputNeurons()));
+            itIn != std::prev(std::end(p_Net->getInputNeurons())); // prev, чтобы не присваивать значение входа нейрону смещения
             ++itIn   )
     {
         (*itIn)->setIn(static_cast<double>(in[count]));
