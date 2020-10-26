@@ -39,7 +39,7 @@ int main()
 			sumError += net.training().getError();
 		}
 		if (!(era % 1000)) {
-			std::cout << era << " " << sumError / 4.0 << std::endl;
+			std::cout << era << " " << sumError / in.size() << std::endl;
 		}
 		sumError = 0;
 	}
