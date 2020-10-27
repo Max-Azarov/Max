@@ -50,5 +50,7 @@ int main()
 		net.training().forwardPass(in[i]);
 		std::cout << net.getOutputNeurons()[0]->getOut() << std::endl;
 	}
+	// Сохраняем веса синапсов
+	net.training().saveWeightOfSynapses();
 	return 0;
 }
